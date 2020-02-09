@@ -107,8 +107,6 @@ total_price = 0
     index += 1 
   end 
   
-  if total_price > 100
-    total_price *= 0.10
-  end 
+ 
 return total_price
 end
