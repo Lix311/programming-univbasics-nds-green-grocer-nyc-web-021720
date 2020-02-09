@@ -106,13 +106,7 @@ total_price = 0
     coupon_cart = apply_coupons(consolidated_cart,coupons)
     discounted_cart = apply_clearance(coupon_cart)
   end   
-    total_price += discounted_cart[index][:price]
-    index += 1 
-   
-  
-  if total_price > 100
-    total_price *= 0.10
-  end
+    
 total_price    
 
 
