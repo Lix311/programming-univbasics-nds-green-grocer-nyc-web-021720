@@ -97,7 +97,6 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-binding.pry
 consolidated_cart = consolidate_cart(cart)
 coupon_cart = apply_coupons(consolidated_cart,coupons)
 discounted_cart = apply_clearance(coupon_cart)
@@ -108,6 +107,8 @@ total_price = 0
     index += 1 
   end 
   
- 
-return total_price
+  if total_price > 100
+    total_price *= 0.10
+  end
+total_price    
 end
