@@ -110,7 +110,7 @@ total_price = 0
   end 
   
   if total_price > 100
-    total_price *= 0.10
+    total_price *= 0.90
   end
 total_price    
 end
