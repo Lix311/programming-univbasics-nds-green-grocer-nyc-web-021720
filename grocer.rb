@@ -77,7 +77,6 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-binding.pry  
 index = 0 
   while index < cart.length
     if cart[index][:clearance] == true 
