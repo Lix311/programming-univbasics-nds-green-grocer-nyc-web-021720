@@ -85,7 +85,7 @@ index = 0
     end 
   index += 1 
   end
-binding.pry 
+#binding.pry 
 cart 
 end 
 
