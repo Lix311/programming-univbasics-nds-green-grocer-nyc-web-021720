@@ -81,7 +81,7 @@ binding.pry
 index = 0 
   while index < cart.length
     if cart[index][:clearance] == true 
-      cart[index][:price] = (cart[index][:price] * 0.20).round(2) 
+      cart[index][:price] = (cart[index][:price] * 0.80).round(2) 
     end 
   index += 1 
   end
