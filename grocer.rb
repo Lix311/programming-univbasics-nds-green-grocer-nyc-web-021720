@@ -98,12 +98,12 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
 
-consolidated_cart = consolidate_cart(cart)
-coupon_cart = apply_coupons(consolidated_cart,coupons)
-discounted_cart = apply_clearance(coupon_cart)
+
 index = 0 
 total_price = 0  
   while index < discounted_cart.length
+    
+    
     total_price += discounted_cart[index][:price]
     index += 1 
   end 
