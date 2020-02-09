@@ -102,9 +102,9 @@ consolidated_cart = consolidate_cart(cart)
 coupon_cart = apply_coupons(consolidated_cart,coupons)
 discounted_cart = apply_clearance(coupon_cart)
 index = 0 
-total_price = 0  
+item_price = discounted_cart[index]  
   while index < discounted_cart.length
-    total_price += discounted_cart[index][:price]
+    total_price *= discounted_cart[index][:price]
     index += 1 
   end 
   
