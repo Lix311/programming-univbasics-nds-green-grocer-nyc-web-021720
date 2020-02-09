@@ -97,10 +97,6 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-index = 0 
-  while index < cart.length 
-    cart[index]
-  binding.pry 
-  end 
+
 
 end
